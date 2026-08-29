@@ -417,6 +417,65 @@ body > main.section-frame > h1:first-child + p {
   font-weight: 500;
 }
 
+.home-equipment {
+  display: grid;
+  grid-template-columns: 56px minmax(260px, 0.72fr) minmax(0, 1fr);
+  gap: 24px 30px;
+  align-items: center;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.equipment-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 10px 22px rgba(28, 24, 20, 0.06);
+}
+
+.equipment-icon svg {
+  display: block;
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.equipment-heading span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.equipment-heading h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.home-equipment p {
+  max-width: 590px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -2040,6 +2099,15 @@ a.schedule-method:hover {
     font-size: 48px;
   }
 
+  .home-equipment {
+    grid-template-columns: 52px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .home-equipment p {
+    grid-column: 2;
+  }
+
   .home-offers {
     padding: 44px 0 42px;
   }
@@ -2435,6 +2503,20 @@ a.schedule-method:hover {
   .home-hero-copy .button,
   .editing-footer .button {
     width: 100%;
+  }
+
+  .home-equipment {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0;
+  }
+
+  .home-equipment p {
+    grid-column: auto;
+  }
+
+  .equipment-heading h2 {
+    font-size: 28px;
   }
 
   .home-offers {
