@@ -94,11 +94,21 @@
               <div class="add-on-row">
                 <span class="add-on-copy">
                   <span>
-                    Edited Video
+                    Edited Cinematic Video
                     <small>1-2 minute</small>
                   </span>
                 </span>
                 <span class="price" data-price="editedVideo">$150</span>
+              </div>
+
+              <div class="add-on-row">
+                <span class="add-on-copy">
+                  <span>
+                    Unedited walkthrough Video
+                    <small>2-3 minute</small>
+                  </span>
+                </span>
+                <span class="price" data-price="uneditedVideo">$150</span>
               </div>
 
             </div>
@@ -114,10 +124,10 @@
     <script>
       (function () {
         var pricing = {
-          "0-1500":    { standard: 200, premium: 250, drone: 150, droneAddon: 80, editedVideo: 250 },
-          "1501-3000": { standard: 210, premium: 260, drone: 160, droneAddon: 80, editedVideo: 300 },
-          "3001-5000": { standard: 220, premium: 270, drone: 170, droneAddon: 80, editedVideo: 350 },
-          "5000-6000": { standard: 230, premium: 280, drone: 180, droneAddon: 80, editedVideo: 400 }
+          "0-1500":    { standard: 200, premium: 250, drone: 150, droneAddon: 80, editedVideo: 250, uneditedVideo: 150 },
+          "1501-3000": { standard: 210, premium: 260, drone: 160, droneAddon: 80, editedVideo: 300, uneditedVideo: 170 },
+          "3001-5000": { standard: 220, premium: 270, drone: 170, droneAddon: 80, editedVideo: 350, uneditedVideo: 190 },
+          "5000-6000": { standard: 230, premium: 280, drone: 180, droneAddon: 80, editedVideo: 400, uneditedVideo: 210 }
         };
 
         var sizeSelect = document.getElementById("home-size");
